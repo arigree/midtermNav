@@ -3,7 +3,7 @@ import { changePage } from "../model/model.js";
 function route() {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace("#", "");
-    console.log("route", pageID);
+    // console.log("route", pageID);
     changePage(pageID);
     
   }
