@@ -5,6 +5,7 @@ function route() {
     let pageID = hashTag.replace("#", "");
     console.log("route", pageID);
     changePage(pageID);
+    
   }
 
 function initSite() {
@@ -13,7 +14,6 @@ function initSite() {
   }
   
   $(document).ready(function () {
-   ;
     initSite();
   });
   
