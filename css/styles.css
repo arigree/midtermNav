@@ -25,6 +25,7 @@ nav .hamburger {
   background-color: white;
   height: 20px;
   width: 20px;
+  display: none;
 }
 nav .links a {
   text-decoration: none;
@@ -38,6 +39,8 @@ nav .links a {
     justify-content: space-between;
   }
   nav .hamburger {
+    width: 50px;
+    height: 50px;
     display: block;
     background-color: black;
   }
@@ -45,5 +48,6 @@ nav .links a {
     height: 80%;
     display: flex;
     flex-direction: column;
+    display: none;
   }
 }
