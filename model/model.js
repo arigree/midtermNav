@@ -18,6 +18,11 @@ export function changePage(pageName) {
 }
 
 export function hamburgerOpen(){
-  console.log(hamburger)
-  
+  const navStyles ={
+    'height' : "100vh",
+    'width' : "100px",
+    'justify-content' : 'space-between'
+  }
+  $(".links").css("display", "block");
+  $("nav").css("height", "100vh");
 }
