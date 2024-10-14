@@ -20,8 +20,8 @@ export function changePage(pageName) {
 export function hamburgerOpen() {
  
   $(".links").css("display", "block");
-  $("nav").css("height", "100vh");
-  $("nav").css("width", "100px");
+//   $("nav").css("height", "100vh");
+//   $("nav").css("width", "100px");
   $("nav").css("justify-content", "space-between");
   $(".hamburger").css("display", "none");
   $(".hamburgerClose").css("display", "block");
@@ -35,10 +35,10 @@ export function hamburgerOpen() {
 }
 export function hamburgerClose() {
  console.log("close")
-  $(".links").css("display", "none");
-  $("nav").css("height", "50px");
-  $("nav").css("width", "50px");
+//   $("nav").css("height", "50px");
+//   $("nav").css("width", "50px");
   $(".hamburger").css("display", "block");
   $(".hamburgerClose").css("display", "none");
+  $(".links").css("display", "none");
   // $("nav").css("height", "100vh", "width", "100px");
 }
