@@ -8,8 +8,8 @@ nav {
   flex-direction: row;
   .hamburger{
     background-color: white;
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
     display: none;
   }
   .links{
@@ -31,6 +31,11 @@ nav {
             height: 50px;
             display: block;
             background-color: black;
+        }
+        .hamburgerClose{
+            width: 50px;
+            height: 50px;
+            background-color: white;
         }
         .links{
             height: 80%;

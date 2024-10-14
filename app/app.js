@@ -1,4 +1,4 @@
-import { changePage, hamburgerOpen } from "../model/model.js";
+import { changePage, hamburgerOpen, hamburgerClose } from "../model/model.js";
 
 function route() {
   let hashTag = window.location.hash;
@@ -19,5 +19,10 @@ $(document).ready(function () {
 $(document).on("click", ".hamburger", function(event){
   event.preventDefault();
   hamburgerOpen()
+  console.log("app hamburger")
+})
+$(document).on("click", ".hamburgerClose", function(event){
+  event.preventDefault();
+  hamburgerClose()
   console.log("app hamburger")
 })
