@@ -25,6 +25,7 @@ export function hamburgerOpen() {
   $("nav").css("justify-content", "space-between");
   $(".hamburger").css("display", "none");
   $(".hamburgerClose").css("display", "block");
+  $('body').css("flex-direction", "row")
   
 
 
