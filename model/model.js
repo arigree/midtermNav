@@ -16,3 +16,8 @@ export function changePage(pageName) {
     });
   }
 }
+
+export function hamburgerOpen(){
+  console.log(hamburger)
+  
+}
