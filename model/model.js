@@ -18,6 +18,10 @@ export function changePage(pageName) {
 }
 
 export function hamburgerOpen(){
+    function addStyles(elem, styles) {
+        elem.style.cssText += Object.keys(styles).map(key => `${key}: ${styles[key]};`).join('');
+      }
+      
   const navStyles ={
     'height' : "100vh",
     'width' : "100px",
