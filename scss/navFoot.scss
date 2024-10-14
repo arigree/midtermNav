@@ -47,8 +47,17 @@ nav {
     @media (min-width: 391px) {
         nav{
         //   display: block;
-          width: 100 vw;
-          height: 50px;
+          width: 100vw !important;
+          height: 50px !important;
+          .hamburgerClose{
+            display: none;
+          }
+          .hamburger{
+            display: none !important;
+          }
+          .links{
+            display: block !important;
+          }
         //   flex-direction: row;
         }
   }

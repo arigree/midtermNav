@@ -16,13 +16,32 @@ $(document).ready(function () {
   initSite();
 });
 
-$(document).on("click", ".hamburger", function(event){
+$(document).on("click", ".hamburger", function (event) {
   event.preventDefault();
-  hamburgerOpen()
-  console.log("app hamburger")
-})
-$(document).on("click", ".hamburgerClose", function(event){
+
+  const nav = document.getElementById("nav");
+  const links = document.getElementById("links");
+
+  if (window.innerWidth >= 400) {
+    nav.style.width = "100vw";
+    links.style.display ="block"
+    
+  } else {
+    hamburgerOpen();
+  }
+  console.log("app open hamburger");
+});
+$(document).on("click", ".hamburgerClose", function (event) {
   event.preventDefault();
-  hamburgerClose()
-  console.log("app hamburger")
-})
+  const nav = document.getElementById("nav");
+  const links = document.getElementById("links");
+
+  if (window.innerWidth >= 400) {
+    nav.style.width = "100vw";
+    links.style.display ="block"
+  } else {
+    hamburgerClose();
+  }
+
+  console.log("app hamburger");
+});

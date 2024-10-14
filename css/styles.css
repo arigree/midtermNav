@@ -64,7 +64,16 @@ nav .links a {
 }
 @media (max-width: 390px) and (min-width: 391px) {
   nav {
-    width: 100 vw;
-    height: 50px;
+    width: 100vw !important;
+    height: 50px !important;
+  }
+  nav .hamburgerClose {
+    display: none;
+  }
+  nav .hamburger {
+    display: none !important;
+  }
+  nav .links {
+    display: block !important;
   }
 }
